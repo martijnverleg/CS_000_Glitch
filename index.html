@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            margin: 0;
+        }
+
+        canvas {
+            display: block;
+        }
+
+        input {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="glCanvas"></canvas>
+    <input type="file" id="upload"/>
+
+    <label for="lines">Lines: </label>
+    <input type="range" class="slider" id="lines" name="lines" min="1" max="128"></input>
+    <label for="maxHeight">Max height: </label>
+    <input type="range" class="slider" id="maxHeight" name="maxHeight" min="0" max="1.0" step="0.001"></input>
+    <label for="offset">Offset: </label>
+    <input type="range" class="slider" id="offset" name="offset" min="0" max="0.2" step="0.001"></input>
+
+    <button id="download">Download</button>
+
+    <script language="javascript" type="text/javascript" src="frame.js"></script>
+    <script language="javascript" type="text/javascript" src="buffers.js"></script>
+    <script language="javascript" type="text/javascript" src="scene.js"></script>
+    <script language="javascript" type="text/javascript" src="shaders.js"></script>
+    <script language="javascript" type="text/javascript" src="textures.js"></script>
+    <script language="javascript" type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
